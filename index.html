@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plant Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="display">
+        <div id="status">
+            <h1>Plant Simulator</h1>
+            <h3 id="overallLevel">Overall: Good</h3>
+            <p id="waterLevel">Water: 100</p>
+            <p id="soilLevel">Soil: 100</p>
+            <p id="lightLevel">Light: 100</p>
+        </div>
+
+        <div id="plant"> <!--7x7 grid used to represent plant-->
+            <div class="plant"></div><div class="plant"></div><div class="plant"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+            <div class="empty"></div><div class="plant"></div><div class="plant"></div><div class="plant"></div><div class="empty"></div><div class="plant"></div><div class="plant"></div>
+            <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="plant"></div><div class="plant"></div><div class="plant"></div><div class="plant"></div>
+            <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="plant"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+            <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="plant"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+            <div class="empty"></div><div class="pot"></div><div class="pot"></div><div class="pot"></div><div class="pot"></div><div class="pot"></div><div class="empty"></div>
+            <div class="empty"></div><div class="pot"></div><div class="pot"></div><div class="pot"></div><div class="pot"></div><div class="pot"></div><div class="empty"></div>
+        </div>
+
+        <div id="buttons">
+            <button id="giveWater">Give Water</button>
+            <button id="toggleLight">Give Shade</button>
+            <button id="replaceSoil">Replace Soil</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+/*General styling*/
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  background-color: rgb(246, 248, 235);
+}
+button{
+    margin-top:10px;
+    background-color:rgb(243, 239, 233);
+    border-radius:7px;
+    border-color:rgb(230, 221, 211);
+    cursor:pointer;
+    color:rgb(74, 42, 11);
+}
+h1, h3{
+    color:rgb(124, 96, 59);
+}
+p{
+    color:rgb(74, 42, 11);
+}
+
+/*Plant appearance*/
+#plant{
+  display: grid;
+  grid-template-columns: repeat(7, 28px);
+  grid-auto-rows: 28px;
+  padding: 20px;
+  border-radius: 12px;
+  gap:1px;
+}
+#plant>div{
+  width: 28px;
+  height: 28px;
+  border-radius:7px;
+}
+.empty{
+  background: transparent;
+}
+.plant{
+  background: rgb(64, 150, 86);
+}
+.pot{
+    background: rgb(209, 111, 13);
+}
+
+
+/*Plant Coloring*/
+#plant{
+    background-color: rgb(188, 219, 201);
+    transition: background-color 0.5s ease;
+}
+#plant.light-on{
+    background-color: rgb(244, 231, 184);
+}
+
+/*Color for different plant states*/
+#plant.overlit .plant{
+    background: rgb(187, 187, 155);
+}
+#plant.overwatered .plant{
+    background: rgb(194, 194, 79);
+}
+#plant.thriving .plant{
+    background: rgb(57, 152, 82);
+}
+#plant.good .plant{
+    background: rgb(110, 170, 90);
+}
+#plant.weak .plant{
+    background: rgb(138, 153, 77);
+}
+#plant.poor .plant{
+    background: rgb(140, 120, 70);
+}
+#plant.horrible .plant{
+    background: rgb(99, 96, 88);
+}
